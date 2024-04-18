@@ -7,9 +7,9 @@
 #include <string>
 #include "Tweet.h"
 
-std::vector<Tweet> parse_entry()
+std::vector<Tweet> parse_entry(string file)
 {
-    std::string filename{"text.csv"};
+    std::string filename{file};
     std::ifstream input{filename};
 
     if (!input.is_open()) {
