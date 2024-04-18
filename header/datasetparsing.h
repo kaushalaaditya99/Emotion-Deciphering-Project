@@ -14,7 +14,7 @@ std::vector<Tweet> parse_entry(string file)
 
     if (!input.is_open()) {
         std::cerr << "Couldn't read file: " << filename << "\n";
-        return 1; 
+        return; 
     }
 
     std::vector<std::vector<std::string>> csvRows;
